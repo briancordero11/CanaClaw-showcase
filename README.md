@@ -1,8 +1,8 @@
 # Can.AI Showcase
 
-**Can.AI, formerly CanaClaw, is an enterprise agent session manager designed to run on computers in a customer's office.** Companies purchase Can.AI seats through a website, install the software on approved office computers, connect their existing licensed AI access, and have a senior engineer configure the agents and automations employees will use.
+**Can.AI, formerly CanaClaw, is an enterprise agent session manager designed to run on computers in a customer's office.** The journey starts with Codex/Claude plugin and access setup, then Can.AI seat purchase and an installation package. A Chief AI Officer or Senior-Level Engineer leads starter intake, customization, and PowerTools setup for the team's work.
 
-The product combines local editing and automation with OpenClaw session orchestration, messaging, and decision routing. Pega delivery is one example workflow; the broader product is the operating layer for configured agents across office work.
+The product combines local editing and automation, a data lake and data storage for tool optimization, and OpenClaw routing through iMessage to support high-degree decision making. Cognition, Emergences Labs, and Rowboat Labs form the proposed platform integration layer. Pega delivery remains one example workflow.
 
 This repository presents the intended customer experience and public product design. Features described here are proposed capabilities, not evidence of a released installer, live checkout, or production deployment. The repository retains its original `CanaClaw-showcase` URL for continuity.
 
@@ -10,33 +10,40 @@ This repository presents the intended customer experience and public product des
 
 | Stage | Customer action | Intended Can.AI experience |
 | --- | --- | --- |
+| Access setup | Prepare Codex/Claude plugins and eligible customer access | Verified identity, permissions, billing route, and connection prerequisites |
 | Buy | An organization purchases named-user seats on the website | An organization workspace, seat assignments, billing records, and download access |
-| Install | IT downloads the installer and enrolls an approved office computer | A local session manager connected to that organization's entitlement |
-| Connect | Authorized users or administrators connect supported OpenAI or Anthropic access | A connection check showing the runtime, account, billing route, and available capabilities |
-| Configure | A senior engineer signs in to the admin panel | Versioned agent roles, workspaces, tools, triggers, model routes, approvals, and budgets |
-| Activate | The engineer tests and publishes a PowerTools profile | A repeatable automation setup employees can select without reconfiguring the runtime |
+| Install and intake | Download the installation package and complete starter intake | A working office installation and documented workflows, data sources, and desired outcomes |
+| Customize | The Chief AI Officer or Senior-Level Engineer defines the PowerTools setup | Agent roles, tools, platform choices, data access, triggers, decision rules, and budgets |
+| Connect platforms | Evaluate Cognition, Emergences Labs, and Rowboat Labs for the selected workflow | Individually validated integrations and a record of their access and execution boundaries |
+| Organize data | Scope the data lake and data storage for tool optimization | Relevant context, reusable artifacts, and evidence for improving tool use |
+| Activate | Test and publish the PowerTools profile | A repeatable setup employees can select for their work |
 | Work | Employees edit files, request suggestions, and delegate approved workflows | Visible sessions with progress, changes, review points, and results |
-| Decide | An authorized reviewer receives a decision request through the panel or a configured OpenClaw channel | A decision attached to the correct session, followed by execution within its permissions |
+| Decide | Receive a decision brief through iMessage via OpenClaw | High-degree decision making with evidence, options, tradeoffs, and a recorded human decision |
 | Operate | IT monitors hosts, usage, failures, and seat assignments | Controlled updates, recoverable sessions, and measurable workflow outcomes |
 
 ## What Can.AI adds
 
-- A purchase-to-install path for enterprise teams
-- Engineer-defined PowerTools profiles for repeatable work
+- An access-setup-to-installation journey with starter intake and customization
+- PowerTools profiles owned by a Chief AI Officer or Senior-Level Engineer
 - A shared management view of separately authorized agent sessions
-- Local tools for editing and automation where the installed runtime supports them
-- OpenClaw coordination for task delivery, session routing, and approval requests
+- A data lake and data storage layer for context retrieval and tool optimization
+- Proposed platform connections to Cognition, Emergences Labs, and Rowboat Labs
+- OpenClaw and iMessage coordination for high-degree decision making
 - Visibility into completion, correction effort, provider consumption, and cost per accepted workflow
 
 Here, **PowerTools** means Can.AI's proposed configuration bundles for agents and automations. **DTC** retains the product brief's shorthand for OpenClaw's messaging and decision-routing role; this showcase does not define a new protocol by that name.
 
 ## Existing AI access
 
-Customers bring suitable OpenAI or Anthropic access. A Can.AI seat pays for Can.AI's management software; it does not include a provider seat or inference allowance. Supported subscription sign-in and API credentials are distinct connection paths. The installer must verify the selected runtime's actual authentication, organization policy, usage limits, and permitted integration. OpenAI documents subscription and API-key authentication separately. [OpenAI authentication](https://learn.chatgpt.com/docs/auth)
+Customers bring suitable OpenAI or Anthropic access for the Codex/Claude setup and any separate access required by the selected platform integrations. A Can.AI seat pays for Can.AI's management software; it does not include every third-party platform seat or inference allowance. Subscription sign-in and API credentials remain distinct connection paths. OpenAI documents these authentication routes separately. [OpenAI authentication](https://learn.chatgpt.com/docs/auth)
+
+The named platforms are proposed integration targets, with capabilities and compatibility to be established during customization. See the [architecture](ARCHITECTURE.md#integration-design) for their distinct roles.
 
 ## Office execution and data boundaries
 
-The agent session manager and permitted computer actions run on the enrolled office host. Hosted models still receive the approved context needed for inference. Messaging channels can also transmit task summaries or results. An on-premises installation therefore does not by itself mean offline inference or that all data stays inside the office. The proposed setup makes those destinations visible to the administrator.
+The local session manager and permitted computer actions run on the office computer. The data lake and storage may be local or customer-controlled remote services, as selected during intake. Connected AI services receive approved context; iMessage carries scoped decision briefs and responses. These locations are recorded during customization.
+
+iMessage delivery requires a configured Mac Messages bridge, including when the office execution computer uses another operating system. [OpenClaw iMessage setup](https://docs.openclaw.ai/channels/imessage/setup)
 
 ## Explore the showcase
 
@@ -46,4 +53,4 @@ The agent session manager and permitted computer actions run on the enrolled off
 - [Business model and enterprise token fit](BUSINESS_MODEL_AND_ENTERPRISE_FIT.md)
 - [Public security design](SECURITY.md)
 
-Independent portfolio work by Brian Cordero. References to OpenAI, Anthropic, OpenClaw, and Pega describe intended integrations or examples and do not imply endorsement. Copyright (c) 2026 Brian Cordero. All rights reserved.
+Independent portfolio work by Brian Cordero. Named products and organizations describe intended integrations or examples and do not imply endorsement. Copyright (c) 2026 Brian Cordero. All rights reserved.

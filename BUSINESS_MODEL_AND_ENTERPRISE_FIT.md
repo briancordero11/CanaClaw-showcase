@@ -1,8 +1,8 @@
 # Can.AI: Business Model and Enterprise Token Fit
 
-Can.AI, formerly CanaClaw, is proposed as a licensed agent session manager installed on computers in a customer's office. Customers purchase seats through a website, download the software, connect their existing eligible AI accounts, and have a senior engineer configure repeatable automation through an admin panel.
+Can.AI, formerly CanaClaw, is proposed as a licensed agent session manager installed on computers in a customer's office. The journey begins with Codex/Claude plugin and access setup, followed by website seat purchase, portal downloads, an installation package, and starter intake/customization led by a Chief AI Officer or Senior-Level Engineer.
 
-The commercial proposition is to turn AI access the enterprise already pays for into useful, supervised work on its own computers. Can.AI sells deployment, configuration, session management, workflow controls, and support. Model access remains a separate customer relationship with the provider.
+The commercial proposition is to turn AI access the enterprise already pays for into useful, supervised work on its own computers. Can.AI sells deployment, starter customization, session management, workflow controls, and support. A proposed data lake and data-storage layer supplies approved context for tool optimization, while iMessage is the primary intended channel for decision requests. Model access remains a separate customer relationship with the provider.
 
 This document describes a proposed business model and validation plan. Packages, prices, capabilities, and outcomes below are design hypotheses unless explicitly identified as sourced provider behavior.
 
@@ -10,15 +10,18 @@ This document describes a proposed business model and validation plan. Packages,
 
 | Stage | Customer action | Proposed Can.AI contribution |
 | --- | --- | --- |
-| Evaluate | A department sponsor selects an initial workflow and identifies the senior engineer who will operate it. | Explain provider prerequisites, supported environments, expected permissions, and what the pilot will measure. |
-| Purchase | An organization buys named-user seats through the website and appoints an administrator. | Create the organization, seat entitlements, billing record, and installer access. |
-| Install | IT downloads and installs the manager on an approved office computer. | Register the host, check runtime prerequisites, and verify connectivity and recovery behavior. |
-| Connect | Each user or authorized enterprise identity connects eligible OpenAI, Anthropic, or other supported access. | Guide supported authentication and report connection health without selling pooled provider credentials. |
-| Configure | A senior engineer opens the admin panel and defines the exact agent setup. | Provide PowerTools configuration for skills, tools, workspaces, schedules, budgets, routing, and approval rules. |
-| Operate | Employees start or continue sessions, request edits, inspect suggestions, and approve delegated work. | Make session state, proposed changes, decisions, exceptions, and results understandable. |
+| Codex/Claude plugin and access setup | Authorized users establish eligible provider access and the supported plugin/runtime connection. | Explain prerequisites and verify the connection path before seat purchase; this step does not assume a universal login or unverified plugin compatibility. |
+| Website purchase | An organization buys named-user seats and identifies its Chief AI Officer or Senior-Level Engineer as setup owner. | Create the organization, seat entitlements, billing record, and customer-portal access. |
+| Portal downloads | The setup owner obtains the installation package and deployment instructions. | Present the package, host requirements, entitlement, and release information in one place. |
+| Installation package | IT installs the downloaded package on an approved office computer. | Check installation prerequisites, selected provider access, connectivity, and recovery behavior. |
+| Starter intake/customization | The Chief AI Officer or Senior-Level Engineer defines the exact agent setup through the starter experience. | Configure PowerTools, approved data-lake sources and storage, tool scope, schedules, budgets, routing, and approval rules. |
+| Operate | Employees start or continue sessions, request edits, inspect suggestions, and delegate configured work. | Use authorized context from the data layer to support tools while showing progress, proposed changes, exceptions, and results. |
+| High-degree decision making | The designated human decision owner reviews a scoped request delivered primarily through iMessage. | Use OpenClaw to coordinate delivery and return the decision to the correct session; effective user and tool permissions still govern execution. |
 | Expand | The sponsor evaluates accepted work, operating costs, and support effort. | Help reuse proven configurations across additional seats, workflows, or office hosts. |
 
-OpenClaw supplies the proposed routing and decision-coordination layer around connected runtimes. In this product description, “DTC” is the product brief's shorthand for the messaging and decision-routing role, not the name of a standardized protocol. Can.AI supplies the customer experience and operating configuration. Provider integrations must be verified for the selected runtime and authentication route before a customer is promised compatibility.
+OpenClaw supplies the proposed routing and decision-coordination layer around connected runtimes, with iMessage as the primary intended decision channel. In this product description, “DTC” is the product brief's shorthand for the messaging and decision-routing role, not the name of a standardized protocol. “High-degree decision making” describes the business function and intended outcome; it is not a login, role identity, or permission grant. The customer assigns the actual human decision owner and scope.
+
+Can.AI supplies the starter experience and operating configuration. Cognition, Emergences Labs, and Rowboat Labs are candidate agent/platform integration targets to evaluate through the local session manager. Their inclusion records product direction, not verified compatibility, existing connectors, available APIs, or interchangeable local runtimes. Every selected integration and the iMessage path require runtime, authentication, platform, and permission validation before being promised to a customer. See the [architecture](ARCHITECTURE.md) for the iMessage bridge prerequisite and data placement.
 
 ## 2. Who would buy it
 
@@ -27,10 +30,11 @@ The initial target is an enterprise department with repetitive computer-based wo
 | Role | Buying interest |
 | --- | --- |
 | Department sponsor | More accepted work per employee, faster turnaround, and fewer repetitive handoffs. |
-| Senior engineer or automation lead | Repeatable setup, session visibility, reliable recovery, and controlled access to local tools. |
+| Chief AI Officer or Senior-Level Engineer | Repeatable starter customization, session visibility, reliable recovery, and controlled access to data and tools. |
 | IT and security | Clear host ownership, identity boundaries, update management, and understandable data flows. |
 | Procurement or finance | Predictable software licensing and visibility into the separate provider bill. |
-| Employee | Useful editing and automation suggestions with a clear way to inspect, approve, stop, or resume work. |
+| Employee | Useful editing and automation suggestions with a clear way to inspect, stop, or resume work. |
+| Designated decision owner | Scoped iMessage decision requests, the supporting context, and a record of the resulting business decision. |
 
 Candidate workflows include document revisions, spreadsheet preparation, recurring reporting, engineering support, and Pega delivery work. Pega is one possible workflow pack rather than the definition of the platform.
 
@@ -40,12 +44,12 @@ Poor fits include teams already satisfied by one provider's native tools, organi
 
 | Revenue component | Proposed charging basis | What it pays for |
 | --- | --- | --- |
-| Core software | Recurring named-user seat subscription, with an organization minimum if needed. | Session manager, admin configuration, workflow execution controls, updates, and standard support. |
-| Deployment service | One-time scoped onboarding fee. | Host setup, provider connection checks, initial PowerTools configuration, and acceptance testing. |
-| Enterprise operations | Contracted platform or deployment fee tied to a clearly defined scope. | Additional host management, organizational controls, support response commitments, and deployment assistance. |
+| Core software | Recurring named-user seat subscription, with an organization minimum if needed. | Session manager, starter configuration, workflow execution controls, updates, and standard support. |
+| Deployment service | One-time scoped onboarding fee. | Host setup, provider connection checks, PowerTools customization, approved data-source setup, and acceptance testing. |
+| Enterprise operations | Contracted platform or deployment fee tied to a clearly defined scope. | Host management, data-storage operations, iMessage routing support, organizational controls, and support response commitments. |
 | Workflow services | Optional fixed-scope implementation engagement. | Building and validating a department-specific workflow pack. |
 
-Define a seat as an authorized human user, not an unlimited number of concurrent agents. Host counts, simultaneous runs, service identities, support coverage, and any unattended usage should be explicit in the contract. Avoid charging twice for the same entitlement through overlapping seat and host fees.
+Define a seat as an authorized human user, not an unlimited number of concurrent agents. Host counts, simultaneous runs, storage and retrieval allowances, decision-channel support, service identities, and unattended usage should be explicit in the contract. Avoid charging twice for the same entitlement through overlapping seat and host fees. A proposed data-lake service must state which storage, indexing, retrieval, and transfer costs are included and which remain customer costs.
 
 Start with a limited paid pilot and a measurable acceptance criterion. Expand only when the customer can reproduce useful work and operate the configuration at an acceptable cost. No public list price or proven willingness to pay is asserted here.
 
@@ -57,7 +61,7 @@ An existing AI subscription is a prerequisite only when its supported runtime an
 
 OpenAI documents ChatGPT sign-in for subscription access and API-key sign-in for usage-based access, and recommends API keys as the default for automation. The applicable workspace and data controls depend on that route. Can.AI should preserve that distinction during onboarding and validate unattended workflows separately. [OpenAI authentication documentation](https://learn.chatgpt.com/docs/auth)
 
-OpenAI also distinguishes API token pricing from subscription usage. Included subscription tasks should not be estimated by multiplying API token rates. The admin panel should label the active billing mode instead of presenting one misleading combined token balance. [OpenAI pricing documentation](https://learn.chatgpt.com/docs/pricing)
+OpenAI also distinguishes API token pricing from subscription usage. Included subscription tasks should not be estimated by multiplying API token rates. The starter configuration and usage view should label the active billing mode instead of presenting one misleading combined token balance. [OpenAI pricing documentation](https://learn.chatgpt.com/docs/pricing)
 
 For Claude Code distribution, Anthropic currently requires its binary to remain unmodified and its built-in authentication methods to remain available. Each end user authenticates with their own eligible credentials, with usage billed under their own provider agreement; the documented terms prohibit paying for, reselling, or intermediating that usage on the end user's behalf. This supports a proposed software-management fee separate from provider usage, subject to those conditions. [Claude Code legal and compliance documentation](https://code.claude.com/docs/en/legal-and-compliance)
 
@@ -95,8 +99,10 @@ For either route:
 Cost per accepted workflow =
   (allocated Can.AI fees
    + attributable provider costs
-   + rollout and configuration cost amortization
+   + rollout and starter-customization cost amortization
    + host and operating costs
+   + data storage, indexing, retrieval, and transfer costs
+   + iMessage routing and decision-channel operating costs
    + review, correction, and exception-handling labor)
   / number of accepted workflows
 ```
@@ -105,20 +111,20 @@ All attempted runs belong in the numerator, including attempts that never become
 
 ### Token-efficient operation
 
-The proposed admin setup should let engineers test a smaller or faster model on bounded tasks and escalate difficult work only when the quality test requires it. Reuse approved workflow templates, retrieve relevant context instead of repeatedly sending whole workspaces, and apply caching only where the provider supports it and measured economics justify it. These are optimization hypotheses to validate, not promised savings.
+The proposed starter customization should let the setup owner test a smaller or faster model on bounded tasks and escalate difficult work only when the quality test requires it. Reuse approved PowerTools templates and retrieve relevant context from the authorized data lake and storage layer for tool optimization. Measure retrieval relevance, freshness, and cost instead of assuming that storing more data improves results. Apply caching only where the provider supports it and measured economics justify it. These are optimization hypotheses to validate, not promised savings.
 
 Keep parallel sessions purposeful: duplicate agents, long idle loops, and unbounded retries can consume budget without increasing accepted output. Configure concurrency, retry, time, and context limits, along with spend alerts and pause thresholds where usage reporting permits enforcement. Surface reporting delays and estimates rather than promise an exact provider-billing ceiling from incomplete telemetry.
 
 ## 6. Illustrative break-even calculation
 
-The following numbers are invented modeling assumptions, not Can.AI prices, provider price quotes, customer results, or a forecast. The example isolates incremental economics for one month and assumes existing office hardware has no incremental cost.
+The following numbers are invented modeling assumptions, not Can.AI prices, provider price quotes, customer results, or a forecast. The example isolates incremental economics for one month and assumes existing office hardware has no incremental cost. It also assumes no incremental data-storage, retrieval, transfer, or iMessage operating charges; a real deployment must include any such costs before using this result.
 
 | Assumption | Illustrative value |
 | --- | ---: |
 | Can.AI seats | 20 |
 | Assumed monthly software charge per seat | $50 |
 | Monthly software total | $1,000 |
-| Amortized setup and additional administration | $400/month |
+| Amortized starter customization and additional operations | $400/month |
 | Manual work per accepted workflow | 30 minutes |
 | Human review and correction with Can.AI | 10 minutes |
 | Loaded labor cost | $60/hour |
@@ -142,15 +148,16 @@ The variable saving is $30 minus $10 of human work minus $0.60 of model use, or 
 
 ## 7. Prove the incremental value
 
-The relevant comparison is the customer's current work process **and** its existing provider-native assistant. Can.AI must earn the additional software and administration cost through deployment consistency, cross-session coordination, useful workflow configuration, or measurable operating improvements.
+The relevant comparison is the customer's current work process **and** its existing provider-native assistant. Can.AI must earn its additional software and operating cost through deployment consistency, reusable starter customization, cross-session coordination, effective data retrieval, and decision routing. High-degree decision making should be assessed through the quality and timeliness of accepted decisions, not the number of iMessage notifications delivered.
 
 | Pilot question | Evidence to collect |
 | --- | --- |
-| Does setup reach useful work quickly? | Time from seat purchase to a working host, verified provider login, and first accepted workflow. |
+| Does setup reach useful work quickly? | Time from Codex/Claude plugin and access setup through purchase, installation, starter customization, and the first accepted workflow. |
 | Is there sustained adoption? | Weekly active licensed users, repeated workflow use, and reasons for abandoned sessions. |
 | Does it improve outcomes? | Acceptance rate, correction time, turnaround time, and comparison with the same task performed manually and in the native assistant. |
-| Is token use economically useful? | Cost per accepted workflow, retry rate, context growth, model mix, and subscription-capacity interruptions. |
-| Can the customer operate it? | Engineer time per host, configuration changes, failed runs, recovery time, and support tickets. |
+| Is token use economically useful? | Cost per accepted workflow, retry rate, retrieved-context relevance and cost, model mix, and subscription-capacity interruptions. |
+| Does decision routing help? | iMessage delivery reliability, time awaiting a human decision, decision quality, and whether the authorized outcome reaches the correct session. |
+| Can the customer operate it? | Setup-owner time per host, PowerTools changes, data maintenance, failed runs, recovery time, and support tickets. |
 | Will the buyer renew? | A paid continuation or expansion decision backed by observed value and operating cost. |
 
 Agree pilot targets with the customer before running the comparison. Use equivalent tasks, quality criteria, approved inputs, and human review rules across methods. Report unsuccessful workflows and support effort alongside successful demonstrations.
