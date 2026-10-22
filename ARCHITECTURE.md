@@ -31,7 +31,7 @@ Cognition, Emergences Labs, and Rowboat Labs identify the proposed agent and pla
 | --- | --- |
 | Codex/Claude plugin and access setup | Prepare the selected client or plugin integration, connect eligible customer access, and establish identity, billing, and permission prerequisites |
 | Website and commercial portal | Product selection, seat purchase, billing, organization membership, and installation-package downloads |
-| Installation package and starter intake | Install on the office computer and capture the team's work, applications, data sources, constraints, and desired outcomes |
+| Installation package and starter intake | Install on the on-premises computer and capture the team's work, applications, data sources, constraints, and desired outcomes |
 | Chief AI Officer or Senior-Level Engineer | Own customization, agent selection, PowerTools configuration, data scope, spending limits, and decision policy |
 | PowerTools profile | A versioned bundle of agent instructions, tools, workspace scope, schedules, and review rules |
 | Local session manager | Session ownership, queueing, progress, cancellation, supported continuation, and run history |
@@ -53,13 +53,13 @@ For native Codex integration, OpenClaw documents that Codex owns its low-level s
 
 A proposed run moves through `queued`, `running`, `awaiting approval`, and `completed`, with explicit `failed` and `cancelled` outcomes. Host unavailability is displayed separately. Continuation depends on the connected runtime; recovery must not repeat a previously completed external action merely because a reply was lost.
 
-Each run references an organization, requester, office computer, connected platform and provider identity, native session identifier where available, PowerTools profile version, authorized data scope, and applicable limits. The local manager correlates those records; it does not pool unrelated users' credentials or grant one session access to another's contents.
+Each run references an organization, requester, on-premises computer, connected platform and provider identity, native session identifier where available, PowerTools profile version, authorized data scope, and applicable limits. The local manager correlates those records; it does not pool unrelated users' credentials or grant one session access to another's contents.
 
 ## Data and network placement
 
 | Location | Intended data or activity |
 | --- | --- |
-| Customer office computer | Local session management, editing, approved tool execution, and temporary working state |
+| Customer on-premises computer | Local session management, editing, approved tool execution, and temporary working state |
 | Data lake and data storage | Governed source collections, approved outputs, retrieval indexes, and permission-scoped operating records; placement is chosen during customization |
 | Commercial portal | Seat entitlements, billing, downloads, device identifiers, and explicitly disclosed operational metadata |
 | Connected AI or agent service | Only the approved context and task data required by its selected route |
@@ -69,7 +69,7 @@ The data lake and storage layer supports retrieval, reusable context, and eviden
 
 Local execution, data storage, and hosted inference are separate deployment decisions. Before enabling an integration, the Chief AI Officer or Senior-Level Engineer verifies its execution location, operating-system support, and effective permissions.
 
-OpenClaw's documented iMessage setup uses its plugin and `imsg` on a Mac signed into Messages. A remote Mac bridge can connect an office gateway running elsewhere. This is a setup prerequisite, rather than native iMessage execution on every office computer. [OpenClaw iMessage setup](https://docs.openclaw.ai/channels/imessage/setup)
+OpenClaw's documented iMessage setup uses its plugin and `imsg` on a Mac signed into Messages. A remote Mac bridge can connect an on-premises gateway running elsewhere. This is a setup prerequisite, rather than native iMessage execution on every on-premises computer. [OpenClaw iMessage setup](https://docs.openclaw.ai/channels/imessage/setup)
 
 ## Configuration and operations
 

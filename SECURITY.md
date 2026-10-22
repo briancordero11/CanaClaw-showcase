@@ -1,11 +1,11 @@
 # Can.AI Public Security Design
 
-This repository contains public product-design documentation and fictional examples. The controls below are implementation requirements for the proposed office-installed session manager, not certifications or claims that a production system has already passed validation.
+This repository contains public product-design documentation and fictional examples. The controls below are implementation requirements for the proposed on-premises session manager, not certifications or claims that a production system has already passed validation.
 
 ## Identity and access
 
 - Distinguish Can.AI seat ownership, installation-package access, Codex/Claude plugin credentials, platform authentication, and decision authority.
-- Preserve each user's provider and session boundaries on a shared office host.
+- Preserve each user's provider and session boundaries on a shared on-premises host.
 - Store credentials in an approved credential store; exclude them from exported profiles, messages, and logs.
 - Give the Chief AI Officer or Senior-Level Engineer controlled access to starter intake, customization, and PowerTools setup without distributing their provider identity to other users.
 - Validate Cognition, Emergences Labs, and Rowboat Labs connections individually, including their data access and execution location.
@@ -21,7 +21,7 @@ This repository contains public product-design documentation and fictional examp
 
 ## On-premises and outbound data
 
-The office computer executes permitted local tools and retains configured working state. Data-lake storage, connected AI services, and iMessage have separate locations and access rules. Starter intake and customization identify the destinations, information sent, provider settings, and any portal telemetry. On-premises installation alone does not establish offline operation, data residency, or a compliance certification.
+The on-premises computer executes permitted local tools and retains configured working state. Data-lake storage, connected AI services, and iMessage have separate locations and access rules. Starter intake and customization identify the destinations, information sent, provider settings, and any portal telemetry. On-premises installation alone does not establish offline operation, data residency, or a compliance certification.
 
 ## Data lake and tool optimization
 

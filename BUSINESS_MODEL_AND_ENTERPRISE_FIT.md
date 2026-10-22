@@ -1,6 +1,6 @@
 # Can.AI: Business Model and Enterprise Token Fit
 
-Can.AI, formerly CanaClaw, is proposed as a licensed agent session manager installed on computers in a customer's office. The journey begins with Codex/Claude plugin and access setup, followed by website seat purchase, portal downloads, an installation package, and starter intake/customization led by a Chief AI Officer or Senior-Level Engineer.
+Can.AI, formerly CanaClaw, is proposed as a licensed agent session manager installed on premises. The journey begins with Codex/Claude plugin and access setup, followed by website seat purchase, portal downloads, an installation package, and starter intake/customization led by a Chief AI Officer or Senior-Level Engineer.
 
 The commercial proposition is to turn AI access the enterprise already pays for into useful, supervised work on its own computers. Can.AI sells deployment, starter customization, session management, workflow controls, and support. A proposed data lake and data-storage layer supplies approved context for tool optimization, while iMessage is the primary intended channel for decision requests. Model access remains a separate customer relationship with the provider.
 
@@ -13,11 +13,11 @@ This document describes a proposed business model and validation plan. Packages,
 | Codex/Claude plugin and access setup | Authorized users establish eligible provider access and the supported plugin/runtime connection. | Explain prerequisites and verify the connection path before seat purchase; this step does not assume a universal login or unverified plugin compatibility. |
 | Website purchase | An organization buys named-user seats and identifies its Chief AI Officer or Senior-Level Engineer as setup owner. | Create the organization, seat entitlements, billing record, and customer-portal access. |
 | Portal downloads | The setup owner obtains the installation package and deployment instructions. | Present the package, host requirements, entitlement, and release information in one place. |
-| Installation package | IT installs the downloaded package on an approved office computer. | Check installation prerequisites, selected provider access, connectivity, and recovery behavior. |
+| Installation package | IT installs the downloaded package on an approved on-premises computer. | Check installation prerequisites, selected provider access, connectivity, and recovery behavior. |
 | Starter intake/customization | The Chief AI Officer or Senior-Level Engineer defines the exact agent setup through the starter experience. | Configure PowerTools, approved data-lake sources and storage, tool scope, schedules, budgets, routing, and approval rules. |
 | Operate | Employees start or continue sessions, request edits, inspect suggestions, and delegate configured work. | Use authorized context from the data layer to support tools while showing progress, proposed changes, exceptions, and results. |
 | High-degree decision making | The designated human decision owner reviews a scoped request delivered primarily through iMessage. | Use OpenClaw to coordinate delivery and return the decision to the correct session; effective user and tool permissions still govern execution. |
-| Expand | The sponsor evaluates accepted work, operating costs, and support effort. | Help reuse proven configurations across additional seats, workflows, or office hosts. |
+| Expand | The sponsor evaluates accepted work, operating costs, and support effort. | Help reuse proven configurations across additional seats, workflows, or on-premises hosts. |
 
 OpenClaw supplies the proposed routing and decision-coordination layer around connected runtimes, with iMessage as the primary intended decision channel. In this product description, “DTC” is the product brief's shorthand for the messaging and decision-routing role, not the name of a standardized protocol. “High-degree decision making” describes the business function and intended outcome; it is not a login, role identity, or permission grant. The customer assigns the actual human decision owner and scope.
 
@@ -38,7 +38,7 @@ The initial target is an enterprise department with repetitive computer-based wo
 
 Candidate workflows include document revisions, spreadsheet preparation, recurring reporting, engineering support, and Pega delivery work. Pega is one possible workflow pack rather than the definition of the platform.
 
-Poor fits include teams already satisfied by one provider's native tools, organizations without someone to operate the office host, and workloads that require fully disconnected inference while relying on cloud models. A computer installed on premises does not imply that model requests remain on premises; the selected provider connection determines where inference occurs.
+Poor fits include teams already satisfied by one provider's native tools, organizations without someone to operate the on-premises host, and workloads that require fully disconnected inference while relying on cloud models. A computer installed on premises does not imply that model requests remain on premises; the selected provider connection determines where inference occurs.
 
 ## 3. Proposed revenue model
 
@@ -117,7 +117,7 @@ Keep parallel sessions purposeful: duplicate agents, long idle loops, and unboun
 
 ## 6. Illustrative break-even calculation
 
-The following numbers are invented modeling assumptions, not Can.AI prices, provider price quotes, customer results, or a forecast. The example isolates incremental economics for one month and assumes existing office hardware has no incremental cost. It also assumes no incremental data-storage, retrieval, transfer, or iMessage operating charges; a real deployment must include any such costs before using this result.
+The following numbers are invented modeling assumptions, not Can.AI prices, provider price quotes, customer results, or a forecast. The example isolates incremental economics for one month and assumes existing on-premises hardware has no incremental cost. It also assumes no incremental data-storage, retrieval, transfer, or iMessage operating charges; a real deployment must include any such costs before using this result.
 
 | Assumption | Illustrative value |
 | --- | ---: |
@@ -162,7 +162,7 @@ The relevant comparison is the customer's current work process **and** its exist
 
 Agree pilot targets with the customer before running the comparison. Use equivalent tasks, quality criteria, approved inputs, and human review rules across methods. Report unsuccessful workflows and support effort alongside successful demonstrations.
 
-The core hypothesis is that enterprises will pay for a dependable way to configure and operate agent work on office computers using their existing AI relationships. Product-market fit remains to be demonstrated through repeatable accepted work, sustainable support costs, and paid renewal.
+The core hypothesis is that enterprises will pay for a dependable way to configure and operate agent work on on-premises computers using their existing AI relationships. Product-market fit remains to be demonstrated through repeatable accepted work, sustainable support costs, and paid renewal.
 
 ## Source scope
 

@@ -1,6 +1,6 @@
 # Can.AI Showcase
 
-**Can.AI, formerly CanaClaw, is an enterprise agent session manager designed to run on computers in a customer's office.** The journey starts with Codex/Claude plugin and access setup, then Can.AI seat purchase and an installation package. A Chief AI Officer or Senior-Level Engineer leads starter intake, customization, and PowerTools setup for the team's work.
+**Can.AI, formerly CanaClaw, is an enterprise agent session manager designed to run on premises.** The journey starts with Codex/Claude plugin and access setup, then Can.AI seat purchase and an installation package. A Chief AI Officer or Senior-Level Engineer leads starter intake, customization, and PowerTools setup for the team's work.
 
 The product combines local editing and automation, a data lake and data storage for tool optimization, and OpenClaw routing through iMessage to support high-degree decision making. Cognition, Emergences Labs, and Rowboat Labs form the proposed platform integration layer. Pega delivery remains one example workflow.
 
@@ -12,7 +12,7 @@ This repository presents the intended customer experience and public product des
 | --- | --- | --- |
 | Access setup | Prepare Codex/Claude plugins and eligible customer access | Verified identity, permissions, billing route, and connection prerequisites |
 | Buy | An organization purchases named-user seats on the website | An organization workspace, seat assignments, billing records, and download access |
-| Install and intake | Download the installation package and complete starter intake | A working office installation and documented workflows, data sources, and desired outcomes |
+| Install and intake | Download the installation package and complete starter intake | A working on-premises installation and documented workflows, data sources, and desired outcomes |
 | Customize | The Chief AI Officer or Senior-Level Engineer defines the PowerTools setup | Agent roles, tools, platform choices, data access, triggers, decision rules, and budgets |
 | Agent harnesses | Evaluate Cognition, Emergences Labs, and Rowboat Labs for the selected workflow | Individually validated integrations and a record of their access and execution boundaries |
 | Organize data | Scope the data lake and data storage for tool optimization | Relevant context, reusable artifacts, and evidence for improving tool use |
@@ -39,11 +39,11 @@ Customers bring suitable OpenAI or Anthropic access for the Codex/Claude setup a
 
 The named platforms are proposed integration targets, with capabilities and compatibility to be established during customization. See the [architecture](ARCHITECTURE.md#integration-design) for their distinct roles.
 
-## Office execution and data boundaries
+## On-premises execution and data boundaries
 
-The local session manager and permitted computer actions run on the office computer. The data lake and storage may be local or customer-controlled remote services, as selected during intake. Connected AI services receive approved context; iMessage carries scoped decision briefs and responses. These locations are recorded during customization.
+The local session manager and permitted computer actions run on the on-premises computer. The data lake and storage may be local or customer-controlled remote services, as selected during intake. Connected AI services receive approved context; iMessage carries scoped decision briefs and responses. These locations are recorded during customization.
 
-iMessage delivery requires a configured Mac Messages bridge, including when the office execution computer uses another operating system. [OpenClaw iMessage setup](https://docs.openclaw.ai/channels/imessage/setup)
+iMessage delivery requires a configured Mac Messages bridge, including when the on-premises execution computer uses another operating system. [OpenClaw iMessage setup](https://docs.openclaw.ai/channels/imessage/setup)
 
 ## Explore the showcase
 

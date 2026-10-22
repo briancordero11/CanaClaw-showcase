@@ -1,4 +1,4 @@
-# Fictional Case Study: Bringing Can.AI into an Enterprise Office
+# Fictional Case Study: Deploying Can.AI On Premises
 
 Northstar Delivery Services is a fictional 12-person enterprise implementation team. Its employees already have approved AI access, but each person configures agents differently. The team's Chief AI Officer or Senior-Level Engineer wants a repeatable installation package, starter intake, and customized PowerTools setup, with governed data and a clear path from agent work to high-degree decision making.
 
@@ -20,15 +20,15 @@ Before proceeding, Northstar checks that each intended connection has the requir
 
 ## 2. Installation package and starter intake
 
-IT downloads the installation package from the organization portal and installs it on an approved office computer. Starter intake captures the team's recurring work, applications, data sources, storage locations, expected outputs, and the people responsible for consequential decisions.
+IT downloads the installation package from the organization portal and installs it on an approved on-premises computer. Starter intake captures the team's recurring work, applications, data sources, storage locations, expected outputs, and the people responsible for consequential decisions.
 
-The office computer becomes the execution host. It must remain powered on and connected for its scheduled work to run. A powered-off machine is shown as unavailable; work waits for it instead of silently moving to an unapproved cloud machine. Initial activation, license renewal, update checks, and hosted model calls have their own disclosed network requirements.
+The on-premises computer becomes the execution host. It must remain powered on and connected for its scheduled work to run. A powered-off machine is shown as unavailable; work waits for it instead of silently moving to an unapproved cloud machine. Initial activation, license renewal, update checks, and hosted model calls have their own disclosed network requirements.
 
-The commercial portal manages seats and package access. Intake determines which working state stays on the office computer and which collections belong in the customer's data lake and data storage. Those storage choices are separate from the portal's commercial records.
+The commercial portal manages seats and package access. Intake determines which working state stays on the on-premises computer and which collections belong in the customer's data lake and data storage. Those storage choices are separate from the portal's commercial records.
 
 ## 3. Customization with PowerTools setup
 
-The Chief AI Officer or Senior-Level Engineer uses the intake results to create a versioned **PowerTools profile** named `Delivery Office v1`. This customization defines agent roles, tools, prompts, data access, workflow triggers, spending limits, and the decisions that must return to a person.
+The Chief AI Officer or Senior-Level Engineer uses the intake results to create a versioned **PowerTools profile** named `Delivery On-Premises v1`. This customization defines agent roles, tools, prompts, data access, workflow triggers, spending limits, and the decisions that must return to a person.
 
 The installation package, starter intake, and PowerTools setup form one customization journey.
 
@@ -59,9 +59,9 @@ For unattended work, the setup owner selects an organization-approved automation
 
 An employee opens Can.AI, selects the delivery profile, and starts a session: "Review these discovery notes, suggest improvements to the requirements workbook, and draft a test checklist."
 
-The local session manager shows the requester, office computer, selected integration, profile version, source collection, progress, and pending decisions. The agent retrieves approved material from storage, produces suggested edits, and prepares a reviewable change summary. An employee can accept, revise, or reject suggestions. Configured execution tools apply authorized edits on the office computer and store approved results in the designated collection.
+The local session manager shows the requester, on-premises computer, selected integration, profile version, source collection, progress, and pending decisions. The agent retrieves approved material from storage, produces suggested edits, and prepares a reviewable change summary. An employee can accept, revise, or reject suggestions. Configured execution tools apply authorized edits on the on-premises computer and store approved results in the designated collection.
 
-In this example, Pega requirements are one output type. The same management journey could support other engineering or office workflows with separately configured tools and templates.
+In this example, Pega requirements are one output type. The same management journey could support other engineering or business workflows with separately configured tools and templates.
 
 ## 6. iMessage supports high-degree decision making
 
@@ -71,7 +71,7 @@ The Chief AI Officer or Senior-Level Engineer receives an iMessage decision brie
 
 This is high-degree decision making: selecting the course of action rather than reviewing every small edit. OpenClaw routes the request and scoped response to the correct session. A named person remains accountable, and execution follows the recorded decision and tool permissions.
 
-Northstar configures a customer-approved Mac signed into Messages as the iMessage bridge, using the documented OpenClaw setup. The office session manager can run elsewhere while communicating with that bridge. [OpenClaw iMessage setup](https://docs.openclaw.ai/channels/imessage/setup)
+Northstar configures a customer-approved Mac signed into Messages as the iMessage bridge, using the documented OpenClaw setup. The on-premises session manager can run elsewhere while communicating with that bridge. [OpenClaw iMessage setup](https://docs.openclaw.ai/channels/imessage/setup)
 
 For provider integration, the design uses the appropriate supported route. OpenClaw documents native Codex app-server integration and a separate ACP path for external agent runtimes. ACP does not itself supply a universal account login or unrestricted shared access. [OpenClaw Codex harness](https://docs.openclaw.ai/plugins/codex-harness), [ACP agents](https://docs.openclaw.ai/tools/acp-agents)
 

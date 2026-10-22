@@ -8,7 +8,7 @@ This fictional example accompanies the [Northstar customer journey](CASE_STUDY.m
 
 ## Starter intake and customization
 
-The Chief AI Officer or Senior-Level Engineer defines `Delivery Office v1` during installation-package intake and PowerTools setup. Codex/Claude plugin and access prerequisites are recorded first. The planned integration layer includes Cognition, Emergences Labs, and Rowboat Labs, with only validated connections enabled for the pilot.
+The Chief AI Officer or Senior-Level Engineer defines `Delivery On-Premises v1` during installation-package intake and PowerTools setup. Codex/Claude plugin and access prerequisites are recorded first. The planned integration layer includes Cognition, Emergences Labs, and Rowboat Labs, with only validated connections enabled for the pilot.
 
 ## Session panel
 
@@ -16,10 +16,10 @@ The Chief AI Officer or Senior-Level Engineer defines `Delivery Office v1` durin
 | --- | --- |
 | Organization | Northstar Delivery Services |
 | Session | `demo-intake-001` |
-| Office host | `office-demo-01` |
+| On-premises host | `onprem-demo-01` |
 | Requester | Assigned delivery analyst |
 | Setup and decision owner | Chief AI Officer or Senior-Level Engineer |
-| PowerTools profile | `Delivery Office v1` |
+| PowerTools profile | `Delivery On-Premises v1` |
 | Agent role | Editing assistant |
 | Integration route | A validated pilot connection with its customer-authorized identity and billing route |
 | Data lake source | Fictional `demo/claims-discovery` collection |
