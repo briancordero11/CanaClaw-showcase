@@ -1,83 +1,114 @@
-# Fictional Case Study: Bringing Can.AI into an Enterprise Office
+# Fictional Case Study: Agent Harnesses and a Reorganization at $100M ARR
 
-Northstar Delivery Services is a fictional 12-person enterprise implementation team. Its employees already have approved AI access, but each person configures agents differently. The team's Chief AI Officer or Senior-Level Engineer wants a repeatable installation package, starter intake, and customized PowerTools setup, with governed data and a clear path from agent work to high-degree decision making.
+Northstar Software is a fictional enterprise software company at **$100 million in annual recurring revenue (ARR)**. A 12-person planning group pilots Can.AI to coordinate agent work across finance, delivery operations, and engineering. Its Chief AI Officer or Senior-Level Engineer owns the technical setup; the CEO, CFO, and people leaders own organizational and budget decisions.
 
-All organizations, people, quantities, tasks, and outcomes below are illustrative. This is the proposed Can.AI customer journey, not a completed customer deployment.
+The executive question is whether to combine delivery operations and workflow automation under one operating model, redeploy six coordination roles, and fund the required technology. ARR describes the company's revenue scale. It is neither cash available to spend nor a forecast of value created by Can.AI.
 
-## 0. Codex/Claude plugin and access setup
+All companies, roles, budgets, quantities, and outcomes in this case are fictional design examples.
 
-Before purchase and rollout, Northstar prepares the selected Codex/Claude client or plugin connection and confirms that its existing provider access covers the intended work. The setup owner records user identities, organization policy, the billing route, required permissions, and a small connection test.
+## 0. Establish the agent anchor
 
-This access step establishes prerequisites for Can.AI. Separate credentials or contracts may be needed for the platform integrations selected later; an OpenAI or Anthropic subscription does not include access to every platform in the architecture.
+Northstar selects **Codex or Claude as its agent anchor**, with the minimum required connectors and plugins installed. In Can.AI terminology, the anchor is the team's primary authenticated agent entry point and starting configuration.
 
-## 1. Discover, evaluate, and purchase seats
+The starter package records the selected product and version, eligible customer account, identity, billing route, organization policy, and a small connection test. The minimum setup for this pilot includes approved read-only finance and workforce-summary access, governed document storage, a spreadsheet/document output tool, and the configured OpenClaw decision route. Tools are enabled only where the chosen anchor and deployment support them.
 
-The operations lead visits Can.AI's website and reviews the product, installation requirements, customization process, and billing split. Northstar chooses 12 named-user Can.AI seats. Its Chief AI Officer or Senior-Level Engineer owns the rollout and decision policy.
+The anchor does not automatically grant access to Dot, Claude Artifacts, Devin, or other platforms. Those experiences have their own capabilities, account requirements, and integration boundaries.
 
-Checkout creates an organization workspace and entitlement. The customer receives a seat-assignment screen, invoice, and installer-download instructions. The Can.AI invoice covers session management and the selected support package. Northstar continues to pay its AI provider directly for the applicable seats, credits, or API consumption.
+## 1. Purchase seats and download the installation package
 
-Before proceeding, Northstar checks that each intended connection has the required provider access. Twelve Can.AI seats do not turn one employee's provider subscription into an organization-wide account.
+The operations lead visits Can.AI's website and buys 12 named-user seats for the planning pilot. The organization portal supplies billing records, entitlement, installation-package downloads, and deployment instructions. Provider subscriptions, agent-platform charges, and usage remain separate customer costs.
 
-## 2. Installation package and starter intake
+IT installs Can.AI on an approved office computer. The local session manager coordinates authorized office work; any hosted agent harness or model service retains its own execution location. Local scheduled work requires the office computer to be available.
 
-IT downloads the installation package from the organization portal and installs it on an approved office computer. Starter intake captures the team's recurring work, applications, data sources, storage locations, expected outputs, and the people responsible for consequential decisions.
+## 2. Starter intake and customization
 
-The office computer becomes the execution host. It must remain powered on and connected for its scheduled work to run. A powered-off machine is shown as unavailable; work waits for it instead of silently moving to an unapproved cloud machine. Initial activation, license renewal, update checks, and hosted model calls have their own disclosed network requirements.
+The Chief AI Officer or Senior-Level Engineer captures the decision objective, current operating model, team responsibilities, source systems, data classifications, and approval owners. The intake asks what evidence the executives need before changing a reporting line or committing budget.
 
-The commercial portal manages seats and package access. Intake determines which working state stays on the office computer and which collections belong in the customer's data lake and data storage. Those storage choices are separate from the portal's commercial records.
+The data lake and data storage hold approved budget snapshots, aggregate workforce information, vendor commitments, workflow metrics, and draft artifacts. Each collection has a source date, owner, access scope, and retention rule. The planning pilot uses synthetic inputs and does not require unrestricted personnel records.
 
-## 3. Customization with PowerTools setup
+## 3. PowerTools setup: anchors, harnesses, and agents
 
-The Chief AI Officer or Senior-Level Engineer uses the intake results to create a versioned **PowerTools profile** named `Delivery Office v1`. This customization defines agent roles, tools, prompts, data access, workflow triggers, spending limits, and the decisions that must return to a person.
-
-The installation package, starter intake, and PowerTools setup form one customization journey.
+The setup owner publishes a versioned PowerTools profile named `Executive Planning v1`.
 
 | Configuration | Northstar's illustrative choice |
 | --- | --- |
-| Agent roles | Intake analyst, editing assistant, test reviewer, and workflow coordinator |
-| Data lake and storage | Approved discovery collection, project outputs, retrieval index, and scoped operating evidence |
-| Tool access | Explicitly configured document, spreadsheet, repository, and supported desktop tools |
-| Integration selection | Evaluate Cognition, Emergences Labs, and Rowboat Labs separately for the tasks they can support |
-| Triggers | Employee request, approved file arrival, and scheduled end-of-day review |
-| High-degree decision policy | Present evidence and tradeoffs to the Chief AI Officer or Senior-Level Engineer for consequential choices |
-| Resource limits | Job concurrency, runtime duration, retry count, context size, and provider spend thresholds |
-| OpenClaw and iMessage | Scoped decision briefs and responses through the configured Mac Messages bridge |
-| Recovery | Pause, cancel, resume where supported, and escalation after a failed retry |
+| Agent anchor | Codex or Claude, with minimum required connectors and plugins installed |
+| Agent harnesses | Approved execution environments that manage agent sessions, context, tools, permissions, continuation, and cancellation |
+| Agents in harnesses | Research and follow-up agent, budget analyst, engineering evaluator, and organization-design reviewer |
+| Agent selection | Choose a role agent, its harness or working experience, and its evidence requirements for each task |
+| Tool requirements and certifications | Required finance, workforce-summary, document, spreadsheet, and storage capabilities; applicable customer-required certificates, audit reports, and internal acceptance evidence |
+| Data lake and storage | Versioned budget sources, aggregate role data, contract schedules, scenario models, and decision records |
+| Triggers | Planning request, approved budget refresh, and scheduled scenario review |
+| Decision policy | Chief AI Officer or Senior-Level Engineer prepares the evidence; CEO/CFO and designated people leaders approve the reorg and spending scope |
+| Resource limits | Session concurrency, runtime duration, retries, context size, and supplier spending limits |
+| OpenClaw and iMessage | Concise executive decision briefs linked to a governed evidence package |
+| Recovery | Pause, cancel, supported continuation, and escalation when a required source or certification is missing |
 
-The setup owner tests the profile with synthetic data, checks generated edits and decision delivery, and publishes it to the 12 assigned users. Later changes are versioned and tested before use.
+**Tool requirements and certifications** is an evidence register, not a claim that Can.AI or every tool is certified. It records the required scheme or review, issuer, scope, validity, deployment applicability, and approval owner. Missing mandatory evidence prevents that tool from entering the pilot's approved configuration.
 
-## 4. Validate integrations and optimize tool context
+## 4. Agents within the harness plan
 
-Cognition, Emergences Labs, and Rowboat Labs are the planned platform layer. Northstar validates each selected connection's available capabilities, credentials, licensing, execution location, and data boundaries. These names are integration targets rather than evidence that Can.AI already supports all three. Their distinct roles are described in the [architecture](ARCHITECTURE.md#integration-design).
+The case distinguishes the anchor, an agent harness, a working agent, and the artifact it produces. The requested examples fit into the plan as follows:
 
-The data lake and data storage provide permission-scoped source material, reusable artifacts, and operating evidence. The team retrieves only relevant context for a task and compares tool performance using accepted outputs, corrections, retries, and cost. Optimization uses reviewed evidence; it does not mean automatically training on every stored record.
+| Harness or working experience | Agent or output in this case | Intended contribution |
+| --- | --- | --- |
+| Dot | Ongoing research and follow-up agent in its hosted environment | Track open questions, collect permitted background evidence, and bring back changes that affect the decision |
+| Claude workflow and Claude Artifacts | Budget-analysis agent producing a scenario document or interactive budget artifact | Make assumptions, calculations, and alternatives inspectable by the planning group |
+| Cognition developer cowork experience, represented by Devin | Engineering evaluation agent in a Devin session | Assess migration effort, integration dependencies, and the feasibility of the proposed automation setup |
+| Selected Codex/Claude anchor harness | Organization-design reviewer with a bounded evidence set | Challenge the proposal, identify missing assumptions, and assemble the executive brief |
 
-For unattended work, the setup owner selects an organization-approved automation identity and connection. Shared hardware and shared storage preserve separate user and session access. See the [provider-access and commercial assumptions](BUSINESS_MODEL_AND_ENTERPRISE_FIT.md#provider-access-and-commercial-boundaries).
+Dot is documented as a cloud agent that can delegate background work. Claude Artifacts are documents, dashboards, or interactive tools produced in a Claude workflow; an artifact is not automatically an independent autonomous agent. Cognition documents Devin sessions that can coordinate managed Devins. These distinctions inform the proposed design; they do not establish existing Can.AI connectors or imply that all experiences run inside one local process. [Meet dots](https://learn.chatgpt.com/docs/dots), [Claude Artifacts](https://support.claude.com/en/articles/17153992-what-are-artifacts-and-how-do-i-use-them), [Cognition managed Devins](https://cognition.com/blog/devin-can-now-manage-devins)
 
-## 5. Employees use the configured system
+Cognition, Emergences Labs, and Rowboat Labs remain proposed platform targets. Agent selection evaluates their actual role and supported connection separately. The [architecture](ARCHITECTURE.md#integration-design) explains those boundaries.
 
-An employee opens Can.AI, selects the delivery profile, and starts a session: "Review these discovery notes, suggest improvements to the requirements workbook, and draft a test checklist."
+## 5. Run the planning workflow
 
-The local session manager shows the requester, office computer, selected integration, profile version, source collection, progress, and pending decisions. The agent retrieves approved material from storage, produces suggested edits, and prepares a reviewable change summary. An employee can accept, revise, or reject suggestions. Configured execution tools apply authorized edits on the office computer and store approved results in the designated collection.
+An employee asks: "Compare the current operating model with a phased reorganization of delivery operations and workflow automation. Show recurring budget, transition cost, role changes, customer-service risk, and the approvals needed."
 
-In this example, Pega requirements are one output type. The same management journey could support other engineering or office workflows with separately configured tools and templates.
+The local session manager assigns bounded work to the selected agents. They retrieve approved source snapshots, draft the budget model, test arithmetic and source consistency, and collect unresolved questions. Tools produce editable planning artifacts and suggested changes. No agent changes the live organization chart, payroll, hiring plan, or purchasing commitments as part of this analysis.
 
-## 6. iMessage supports high-degree decision making
+## 6. The $100M ARR reorganization and budget example
 
-Northstar uses OpenClaw in the brief's **DTC role**: sending requests, routing them to the appropriate session, delivering progress, and carrying decisions back to that session. The term is product shorthand here, not a claim that DTC is a standard OpenClaw protocol.
+Northstar is evaluating a **$12M annual delivery-and-operations budget**, a subset of company spending. The proposal combines delivery operations and workflow automation under the Chief AI Officer and moves six coordination roles into workflow enablement and customer retention.
 
-The Chief AI Officer or Senior-Level Engineer receives an iMessage decision brief: should the team accept the requirements package, commission a targeted second review, or hold the work until a policy ambiguity is resolved? The brief includes relevant evidence, uncertainty, options, consequences, and a link or reference to the governed decision record.
+The six roles represent an illustrative $1.2M of payroll already included below. They remain employed and funded. Their reassignment is a reallocation, not a payroll saving.
 
-This is high-degree decision making: selecting the course of action rather than reviewing every small edit. OpenClaw routes the request and scoped response to the correct session. A named person remains accountable, and execution follows the recorded decision and tool permissions.
+| Budget item | Current annual plan | Reorganized annual run rate |
+| --- | ---: | ---: |
+| Payroll, including the six reassigned roles | $8.4M | $8.4M |
+| Vendors and duplicated systems | $2.4M | $2.0M |
+| Contractors | $1.2M | $0.8M |
+| Can.AI, provider usage, storage, and operating support | $0 | $0.3M |
+| **Recurring budget total** | **$12.0M** | **$11.5M** |
 
-Northstar configures a customer-approved Mac signed into Messages as the iMessage bridge, using the documented OpenClaw setup. The office session manager can run elsewhere while communicating with that bridge. [OpenClaw iMessage setup](https://docs.openclaw.ai/channels/imessage/setup)
+The proposed annual reduction in vendor and contractor expenses is $800K. After the $300K recurring technology-and-operations envelope, the net steady-state reduction is **$500K a year**. The $300K envelope includes multiple suppliers and operating costs; it is not a Can.AI price quote.
 
-For provider integration, the design uses the appropriate supported route. OpenClaw documents native Codex app-server integration and a separate ACP path for external agent runtimes. ACP does not itself supply a universal account login or unrestricted shared access. [OpenClaw Codex harness](https://docs.openclaw.ai/plugins/codex-harness), [ACP agents](https://docs.openclaw.ai/tools/acp-agents)
+The plan also requires a separate **$300K one-time transition budget** for migration, training, and organizational change. Assume the first three months retain the current operating model, followed by nine months at the reorganized run rate:
 
-## 7. Close, measure, and repeat
+```text
+First-year current-model cost = $12.0M x 3/12 = $3.000M
+First-year reorganized cost   = $11.5M x 9/12 = $8.625M
+One-time transition cost                         $0.300M
+First-year total                                 $11.925M
+First-year reduction vs. $12.0M baseline          $0.075M ($75K)
+```
 
-After the decision and review, the session stores approved artifacts, the decision record, and a completion summary in governed storage. The setup owner distinguishes completed, failed, cancelled, and awaiting-decision work, then inspects provider usage and retrieval or storage costs where reported. A new employee receives a seat and the tested profile rather than rebuilding the setup.
+If the old operating model remains for six months rather than three, first-year recurring savings fall to $250K; after the $300K transition cost, the first year costs $50K more than the baseline. The decision therefore depends on timing, vendor commitments, adoption, delivery capacity, and customer-retention risk. It is not justified by an assumed payroll reduction or a claim that agents created the company's ARR.
 
-Northstar evaluates time from plugin/access setup through installation and first accepted work, employee adoption, completion, correction effort, decision turnaround, recovery, and total cost per accepted workflow. No time savings or ROI are claimed until measured.
+## 7. iMessage supports the executive decision
 
-The business hypothesis is that reusable engineering setup and reliable daily operation create enough value to justify Can.AI's fee in addition to the customer's existing provider spend. See [business model and enterprise token fit](BUSINESS_MODEL_AND_ENTERPRISE_FIT.md) and the [example session report](SAMPLE_OUTPUT.md).
+OpenClaw sends the executive a concise iMessage brief with three options: retain the current structure; conditionally approve the phased reorg and its budget envelopes; or run a smaller evidence-gathering pilot before authorizing the reorg. The full model and workforce analysis remain in governed storage.
+
+The proposed recommendation is conditional approval of the phased plan, with a 90-day validation period before the organizational move. The CFO verifies expense assumptions and budget authority; the CEO approves the operating model; designated people leaders approve reporting lines, role transitions, and retraining. The Chief AI Officer or Senior-Level Engineer owns the technical rollout and evidence quality.
+
+An iMessage response is routed to the correct session and recorded with the decision owners, budget version, conditions, and permitted next step. It can authorize preparation of the approved implementation plan. Organizational, personnel, and financial changes still require the responsible owners' normal approval and execution processes.
+
+The configured iMessage path uses a customer-approved Mac Messages bridge. OpenClaw handles request and decision routing in the brief's DTC role. [OpenClaw iMessage setup](https://docs.openclaw.ai/channels/imessage/setup)
+
+## 8. Close, measure, and repeat
+
+The completed planning session stores the scenario model, source references, certification register, agent/harness assignments, executive decision, and outstanding conditions. The planning group measures correction effort, evidence completeness, decision turnaround, source freshness, and total cost of accepted work.
+
+Financial results are evaluated separately after implementation: actual expenses versus the approved baseline, realized vendor reductions, transition spending, customer-service performance, and the experience of reassigned employees. A better decision brief is not itself proof of realized savings.
+
+See the [sample executive brief](SAMPLE_OUTPUT.md) and [business model and enterprise token fit](BUSINESS_MODEL_AND_ENTERPRISE_FIT.md).

@@ -1,6 +1,6 @@
 # Can.AI: Business Model and Enterprise Token Fit
 
-Can.AI, formerly CanaClaw, is proposed as a licensed agent session manager installed on computers in a customer's office. The journey begins with Codex/Claude plugin and access setup, followed by website seat purchase, portal downloads, an installation package, and starter intake/customization led by a Chief AI Officer or Senior-Level Engineer.
+Can.AI, formerly CanaClaw, is proposed as a licensed agent session manager installed on computers in a customer's office. The journey begins with a Codex or Claude **agent anchor** and its minimum required connectors/plugins installed, followed by website seat purchase, portal downloads, an installation package, and starter intake/customization led by a Chief AI Officer or Senior-Level Engineer.
 
 The commercial proposition is to turn AI access the enterprise already pays for into useful, supervised work on its own computers. Can.AI sells deployment, starter customization, session management, workflow controls, and support. A proposed data lake and data-storage layer supplies approved context for tool optimization, while iMessage is the primary intended channel for decision requests. Model access remains a separate customer relationship with the provider.
 
@@ -10,18 +10,26 @@ This document describes a proposed business model and validation plan. Packages,
 
 | Stage | Customer action | Proposed Can.AI contribution |
 | --- | --- | --- |
-| Codex/Claude plugin and access setup | Authorized users establish eligible provider access and the supported plugin/runtime connection. | Explain prerequisites and verify the connection path before seat purchase; this step does not assume a universal login or unverified plugin compatibility. |
+| Agent anchor and access setup | Authorized users establish a Codex or Claude anchor with eligible provider access and the minimum required connectors/plugins installed. | Explain prerequisites and verify the connection path before seat purchase; this step does not assume a universal login or unverified plugin compatibility. |
 | Website purchase | An organization buys named-user seats and identifies its Chief AI Officer or Senior-Level Engineer as setup owner. | Create the organization, seat entitlements, billing record, and customer-portal access. |
 | Portal downloads | The setup owner obtains the installation package and deployment instructions. | Present the package, host requirements, entitlement, and release information in one place. |
 | Installation package | IT installs the downloaded package on an approved office computer. | Check installation prerequisites, selected provider access, connectivity, and recovery behavior. |
-| Starter intake/customization | The Chief AI Officer or Senior-Level Engineer defines the exact agent setup through the starter experience. | Configure PowerTools, approved data-lake sources and storage, tool scope, schedules, budgets, routing, and approval rules. |
+| Starter intake/customization | The Chief AI Officer or Senior-Level Engineer defines Agent selection and Tool requirements and certifications through the starter experience. | Configure PowerTools, role agents, approved data-lake sources and storage, tool scope, schedules, budgets, routing, approval rules, and required evidence. |
 | Operate | Employees start or continue sessions, request edits, inspect suggestions, and delegate configured work. | Use authorized context from the data layer to support tools while showing progress, proposed changes, exceptions, and results. |
 | High-degree decision making | The designated human decision owner reviews a scoped request delivered primarily through iMessage. | Use OpenClaw to coordinate delivery and return the decision to the correct session; effective user and tool permissions still govern execution. |
 | Expand | The sponsor evaluates accepted work, operating costs, and support effort. | Help reuse proven configurations across additional seats, workflows, or office hosts. |
 
 OpenClaw supplies the proposed routing and decision-coordination layer around connected runtimes, with iMessage as the primary intended decision channel. In this product description, “DTC” is the product brief's shorthand for the messaging and decision-routing role, not the name of a standardized protocol. “High-degree decision making” describes the business function and intended outcome; it is not a login, role identity, or permission grant. The customer assigns the actual human decision owner and scope.
 
-Can.AI supplies the starter experience and operating configuration. Cognition, Emergences Labs, and Rowboat Labs are candidate agent/platform integration targets to evaluate through the local session manager. Their inclusion records product direction, not verified compatibility, existing connectors, available APIs, or interchangeable local runtimes. Every selected integration and the iMessage path require runtime, authentication, platform, and permission validation before being promised to a customer. See the [architecture](ARCHITECTURE.md) for the iMessage bridge prerequisite and data placement.
+### Agent selection
+
+In Can.AI's product terminology, the **agent anchor** is the customer's starting Codex or Claude environment with the minimum required connectors/plugins installed. An **agent harness** runs a session and manages its execution, effective permissions, and context. **Role agents** are configured responsibilities inside a selected harness, such as planning, finance analysis, or editing; creating a role does not create a new licensed account or broaden access.
+
+Can.AI supplies the starter experience and operating configuration. Cognition, Emergences Labs, and Rowboat Labs are candidate agent/platform integration targets to evaluate through Agent selection. Their inclusion records product direction, not verified compatibility, existing connectors, available APIs, or interchangeable local runtimes. Every selected integration and the iMessage path require runtime, authentication, platform, and permission validation before being promised to a customer. See the [architecture](ARCHITECTURE.md) for the iMessage bridge prerequisite and data placement.
+
+### Tool requirements and certifications
+
+Starter customization records the tools needed for the workflow and the customer's required certificates, audit reports, or other assurance evidence. The setup owner checks the actual supplier, service, deployment scope, evidence source, review date, and outstanding gaps before accepting a tool. This is an evidence register and purchasing requirement, not a claim that Can.AI or a selected tool has attained a certification. The [security design](SECURITY.md#tool-requirements-and-certifications) describes the proposed controls.
 
 ## 2. Who would buy it
 
@@ -146,13 +154,19 @@ Illustrative monthly difference = $3,600 - $2,672 = $928
 
 The variable saving is $30 minus $10 of human work minus $0.60 of model use, or $19.40 per accepted workflow. Covering $1,400 of fixed monthly cost therefore requires 73 accepted workflows when rounded up. The conclusion changes with actual acceptance rates, review time, provider charges, hardware costs, and operating effort. Time released is capacity value; it is not automatically a realized payroll saving.
 
+### Separate organization-allocation example
+
+The [Northstar Software case study](CASE_STUDY.md) illustrates a different planning exercise for a fictional company with $100 million in ARR and a 12-seat pilot. Its six coordination roles are redeployed: their $1.2 million compensation stays inside the $8.4 million payroll allocation. It is not a headcount saving and must not be added to the per-workflow example above.
+
+That case's $12 million annual decision-budget subset becomes $11.5 million at steady state through an $800,000 vendor/contractor reduction less $300,000 of new recurring cost. With three months at baseline, nine months at the new rate, and a $300,000 one-time transition cost, first-year spending is $11.925 million, or $75,000 below baseline. The $300,000 recurring platform budget includes other suppliers; it is not a Can.AI price or evidence of savings attributable to Can.AI. These are fictional allocation assumptions to review, not financial results.
+
 ## 7. Prove the incremental value
 
 The relevant comparison is the customer's current work process **and** its existing provider-native assistant. Can.AI must earn its additional software and operating cost through deployment consistency, reusable starter customization, cross-session coordination, effective data retrieval, and decision routing. High-degree decision making should be assessed through the quality and timeliness of accepted decisions, not the number of iMessage notifications delivered.
 
 | Pilot question | Evidence to collect |
 | --- | --- |
-| Does setup reach useful work quickly? | Time from Codex/Claude plugin and access setup through purchase, installation, starter customization, and the first accepted workflow. |
+| Does setup reach useful work quickly? | Time from agent-anchor and access setup through purchase, installation, Agent selection, tool-evidence review, starter customization, and the first accepted workflow. |
 | Is there sustained adoption? | Weekly active licensed users, repeated workflow use, and reasons for abandoned sessions. |
 | Does it improve outcomes? | Acceptance rate, correction time, turnaround time, and comparison with the same task performed manually and in the native assistant. |
 | Is token use economically useful? | Cost per accepted workflow, retry rate, retrieved-context relevance and cost, model mix, and subscription-capacity interruptions. |
