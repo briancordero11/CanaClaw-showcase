@@ -6,12 +6,12 @@ This is the intended product design. The public repository contains documentatio
 
 ```mermaid
 flowchart TD
-    P[Agent anchor: Codex or Claude<br/>Minimum required connectors and plugins] --> A
+    P[Codex/Claude plugin and access setup] --> A
     A[Can.AI website and seat purchase] --> B[Organization portal and downloads]
     B --> C[Installation package and starter intake<br/>Customization with PowerTools setup]
     L[Chief AI Officer or Senior-Level Engineer] --> C
     C --> E[Local agent session manager]
-    E --> R[Agent harnesses and agents in harnesses]
+    E --> R[Agent harnesses]
     R --> F[Cognition, Emergences Labs, Rowboat Labs]
     F --> G[Customer-contracted AI and agent services]
     E <--> H[Data lake and data storage<br/>for tool optimization]
@@ -29,16 +29,13 @@ Cognition, Emergences Labs, and Rowboat Labs identify the proposed agent and pla
 
 | Component | Proposed responsibility |
 | --- | --- |
-| Agent anchor: Codex or Claude | Establish the primary authenticated configuration with minimum required connectors and plugins installed; verify identity, billing, and permissions |
+| Codex/Claude plugin and access setup | Prepare the selected client or plugin integration, connect eligible customer access, and establish identity, billing, and permission prerequisites |
 | Website and commercial portal | Product selection, seat purchase, billing, organization membership, and installation-package downloads |
 | Installation package and starter intake | Install on the office computer and capture the team's work, applications, data sources, constraints, and desired outcomes |
 | Chief AI Officer or Senior-Level Engineer | Own customization, agent selection, PowerTools configuration, data scope, spending limits, and decision policy |
 | PowerTools profile | A versioned bundle of agent instructions, tools, workspace scope, schedules, and review rules |
 | Local session manager | Session ownership, queueing, progress, cancellation, supported continuation, and run history |
-| Agent harnesses | Execution and session environments that control context, tools, permissions, continuation, and cancellation |
-| Agents in harnesses | Bounded workers such as research, budget analysis, engineering evaluation, and organization-design review |
-| Agent selection | Match each task with an approved agent, harness or working experience, and source requirements |
-| Tool requirements and certifications | Record required capabilities, applicable certificates or audit reports, scope, validity, and internal acceptance evidence |
+| Agent harnesses | Selected execution environments for configured workflows, validated for their capabilities, access, and session behavior |
 | Cognition, Emergences Labs, Rowboat Labs | Proposed platform connections selected and validated during customization; each retains its own capabilities and access requirements |
 | Data lake and data storage for tool optimization | Governed source data, approved artifacts, retrieval indexes, and operating evidence used to improve tool selection and workflow execution |
 | OpenClaw | Session and channel routing, coordination, decision-request delivery, and result delivery through supported integrations |
@@ -47,8 +44,6 @@ Cognition, Emergences Labs, and Rowboat Labs identify the proposed agent and pla
 | High-degree decision making | Turn task evidence into choices, tradeoffs, and a recorded decision owned by the assigned person |
 
 ## Integration design
-
-Agent anchor is Can.AI's name for the starting Codex or Claude configuration. The anchor, execution harness, assigned agent, and output artifact are separate records. The [case-study harness plan](CASE_STUDY.md#4-agents-within-the-harness-plan) uses Dot, Claude workflows with Artifacts, and Cognition's developer cowork experience represented by Devin as examples. Hosted harnesses retain their execution locations, and an artifact does not become an autonomous agent merely because it displays or calculates a result.
 
 The named organizations play different roles. Cognition's Devin documentation describes an API for sessions and integrations. Emergences Labs describes human competency and human-AI collaboration work. Rowboat Labs publishes Rowboat as an AI coworker. These are ecosystem references for evaluating Can.AI's intended integrations. [Devin API](https://docs.devin.ai/api-reference/overview), [Emergences Labs](https://emergences.ai/), [Rowboat Labs](https://www.rowboatlabs.com/)
 
@@ -80,4 +75,4 @@ OpenClaw's documented iMessage setup uses its plugin and `imsg` on a Mac signed 
 
 The proposed customization process versions and tests PowerTools profiles, scopes access to the data lake, isolates session state, stores secrets using an approved credential store, and provides pause and stop controls. Decision records connect the supporting evidence, accountable person, approved scope, and execution result. Package updates, entitlement renewal, storage backups, retention, and authentication expiry have explicit operating behavior.
 
-See the [customer journey and executive reorg case](CASE_STUDY.md) for the end-to-end experience and [security design](SECURITY.md) for the corresponding controls.
+See the [customer journey](CASE_STUDY.md) for the end-to-end experience and [security design](SECURITY.md) for the corresponding controls.

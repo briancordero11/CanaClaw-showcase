@@ -1,90 +1,73 @@
-# Can.AI Example: Executive Reorganization and Budget Decision
+# Can.AI Example Session and Output
 
-This fictional output accompanies the [Northstar case study](CASE_STUDY.md). Northstar Software is modeled at **$100M ARR**, with a **$12M annual delivery-and-operations budget** under review. The 12-seat Can.AI planning pilot supports the decision. All identifiers, budgets, staffing values, and outcomes are invented examples.
+This fictional example accompanies the [Northstar customer journey](CASE_STUDY.md). It illustrates the proposed experience, not output from a released Can.AI product. All identifiers and usage quantities are synthetic.
 
-## Planning request
+## Employee request
 
-> Compare the current structure with a phased reorganization that combines delivery operations and workflow automation. Show budget, transition cost, role changes, customer impact, and the executive decision required.
+> Review the approved claims-discovery notes, suggest edits to the requirements workbook, and draft an intake test checklist. Show the changes before applying them.
 
-## Anchor, harnesses, and agent selection
+## Starter intake and customization
 
-The Chief AI Officer or Senior-Level Engineer defines `Executive Planning v1`. The **agent anchor is Codex or Claude, with minimum required connectors and plugins installed**. PowerTools records each agent's harness, authorized data, requirements, and expected output.
+The Chief AI Officer or Senior-Level Engineer defines `Delivery Office v1` during installation-package intake and PowerTools setup. Codex/Claude plugin and access prerequisites are recorded first. The planned integration layer includes Cognition, Emergences Labs, and Rowboat Labs, with only validated connections enabled for the pilot.
 
-| Agent selection | Harness or working experience | Planned output |
-| --- | --- | --- |
-| Research and follow-up agent | Dot in its hosted environment, subject to an approved connection | Source changes, open questions, and follow-up evidence |
-| Budget-analysis agent | Claude workflow with Claude Artifacts as the reviewable output surface | Scenario model and executive budget artifact |
-| Engineering evaluation agent | Cognition developer cowork experience represented by a Devin session | Migration estimate, dependencies, and implementation risks |
-| Organization-design reviewer | The approved Codex/Claude anchor harness | Challenge review and decision brief |
-
-These are proposed assignments. Claude Artifacts is the artifact surface in this plan, not an independently certified agent or a claim that it runs locally inside Can.AI. See the [case-study explanation](CASE_STUDY.md#4-agents-within-the-harness-plan).
-
-## Session summary
+## Session panel
 
 | Field | Example value |
 | --- | --- |
-| Organization | Northstar Software |
-| Session | `demo-reorg-001` |
-| Office computer | `office-demo-01` |
-| Requester | Executive planning group |
-| Technical setup owner | Chief AI Officer or Senior-Level Engineer |
-| Organizational and budget owners | CEO, CFO, and designated people leaders |
-| PowerTools profile | `Executive Planning v1` |
-| Tool requirements and certifications | Read-only budget and workforce-summary retrieval, scenario calculations, governed document output, and required customer assurance evidence |
-| Source collection | Fictional `demo/executive-planning` data-lake collection |
-| Output collection | Fictional `demo/reorg-decision` storage collection |
-| State | Awaiting executive decision |
-| Delivery | iMessage through OpenClaw and a configured Mac Messages bridge |
+| Organization | Northstar Delivery Services |
+| Session | `demo-intake-001` |
+| Office host | `office-demo-01` |
+| Requester | Assigned delivery analyst |
+| Setup and decision owner | Chief AI Officer or Senior-Level Engineer |
+| PowerTools profile | `Delivery Office v1` |
+| Agent role | Editing assistant |
+| Integration route | A validated pilot connection with its customer-authorized identity and billing route |
+| Data lake source | Fictional `demo/claims-discovery` collection |
+| Data storage output | Fictional `demo/claims-output` collection |
+| Optimization evidence | Relevant source references, tool results, corrections, and usage where available |
+| Scope | Read the selected collection; propose edits in the designated output location |
+| State | Awaiting decision |
+| Delivery channel | iMessage through OpenClaw and a configured Mac Messages bridge |
 
-The tool-evidence register records requirements, applicable certificates or audit reports, scope, validity, and acceptance owner. This example claims no certification has been obtained.
+The user can inspect suggested changes, request revisions, or cancel. Desktop actions are available only through tools explicitly configured and verified on this host.
 
 ## High-degree decision brief delivered through iMessage
 
-**Decision reference:** `demo-reorg-001 / budget-v1`  
-**Company context:** $100M ARR; ARR is a revenue run rate, not spendable cash.  
-**Decision requested:** Conditionally approve a phased delivery-and-automation reorg, a $300K one-time transition envelope, and a $300K annual technology-and-operations envelope?  
-**Organizational effect:** Combine delivery operations and workflow automation under the Chief AI Officer; redeploy six coordination roles into workflow enablement and customer retention.  
-**Staffing assumption:** $1.2M of payroll moves with those six roles and remains within the existing $8.4M payroll budget. No payroll saving or reduction in employment is assumed.  
-**Financial case:** $800K gross annual vendor/contractor reduction, less $300K new recurring operating cost, gives $500K net annual run-rate reduction. With three months at the current model, nine at the new model, and $300K transition cost, first-year modeled reduction is $75K.  
-**Primary risks:** Delayed contract reductions, disruption to delivery or retention, retraining effort, and insufficient evidence of automation performance.  
-**Recommendation:** Conditional approval with a 90-day validation period and explicit finance, executive, and people-team gates.  
-**Available decisions:** Retain current structure; conditionally approve phased plan; request a smaller pilot and more evidence.  
-**Authority:** CEO/CFO and applicable people leaders approve organizational and spending decisions; the technical setup owner supplies the analysis.  
-**Response window:** Two business days in this illustrative profile; a changed budget version or expired request requires renewed review.
+**Session:** `demo-intake-001`  
+**Decision:** Accept the requirements package, request a targeted second review, or hold for clarification?  
+**Affected artifact:** `demo/claims-output/claims-requirements.xlsx`  
+**Evidence:** The draft covers required-field validation; four policy questions remain unresolved.  
+**Tradeoff:** Accepting now advances planning; a second review adds cost; holding avoids committing to uncertain policy.  
+**Recommendation:** Request a focused review of the unresolved policy questions before treating the package as an approved baseline.  
+**Execution boundary:** The chosen review workflow and output collection; no production-system update.  
+**Decision owner:** Chief AI Officer or Senior-Level Engineer.  
+**Available decisions:** Accept baseline, request second review, or hold.  
+**Expiry:** Fifteen minutes in this illustrative profile; expired requests require a fresh decision.
 
-The concise message references the governed evidence package. Individual employee information and detailed workforce analysis remain in restricted storage.
+OpenClaw routes the iMessage brief and response to the correct session. The local manager verifies the decision owner's identity and approved scope before continuing the selected workflow. High-degree decision making describes the choice being supported; the named person owns the decision.
 
-## Supporting budget artifact
+## Deliverable excerpt
 
-| Budget item | Current annual | Proposed steady-state annual |
-| --- | ---: | ---: |
-| Payroll | $8.4M | $8.4M |
-| Vendors and duplicated systems | $2.4M | $2.0M |
-| Contractors | $1.2M | $0.8M |
-| Can.AI, provider usage, storage, and operations | $0 | $0.3M |
-| **Recurring total** | **$12.0M** | **$11.5M** |
+### Claims-intake workflow
 
-```text
-Gross annual expense reduction = $0.4M + $0.4M = $0.8M
-Net recurring reduction        = $0.8M - $0.3M = $0.5M
-First-year operating cost      = ($12.0M x 3/12) + ($11.5M x 9/12)
-                               = $11.625M
-First-year cost incl. transition = $11.625M + $0.300M = $11.925M
-First-year reduction            = $12.000M - $11.925M = $0.075M
-```
+Suggested stages: capture submission, validate policy details, request missing documents, triage, and confirm intake completion.
 
-The recurring $300K platform envelope covers multiple suppliers, infrastructure, and operating effort. It is not a Can.AI quote. The separate $300K transition envelope is one-time. If the old model remains for six months rather than three, the first year is $50K more expensive than the unchanged baseline. Results depend on the stated assumptions being realized.
+### Proposed acceptance criteria
 
-## Proposed implementation gates
+- Evaluate required fields against the selected claim type.
+- Show missing items in a reviewable checklist.
+- Draft follow-up communication for review before any external send.
+- Record the decision owner, selected course of action, and approval state with the artifact version.
 
-- CFO reconciles the model with approved budgets, vendor contract dates, and accounting treatment.
-- CEO and people leaders approve the new reporting structure, role transitions, and employee support plan.
-- Chief AI Officer or Senior-Level Engineer validates the anchor, selected harnesses and agents, required tool evidence, and representative workflow results.
-- The planning group confirms service-level and customer-retention measures before the reorg stage begins.
-- Material changes to scope, timing, cost, or staffing return for a fresh decision.
+### Unresolved questions
+
+- Which claim types require supervisor review?
+- Which system is authoritative for policy information?
+- What retention period applies to incomplete submissions?
+- Which decision summaries may be sent through iMessage, and which details must remain in governed storage?
 
 ## Completion receipt
 
-The receipt records the source snapshot, anchor and harness identities, agent selection, tool requirements and certification evidence, budget version, decision owners, approvals, conditions, and permitted next step. OpenClaw routes the iMessage decision to the correct session; it does not turn a message into unrestricted authority to update payroll, move employees, or commit funds.
+After the selected workflow completes, the receipt lists the stored artifact, source collection, profile version, decision owner and reference, validation outcome, session reference where available, and failed attempts. Tool-optimization evidence is retained within its collection permissions and retention rules. The receipt can show reported token counts, credits, retrieval and storage charges, or usage limits, with an explicit `unavailable` value where measurement is missing. Dollar costs require a valid billing rate or provider charge.
 
-The output is a reviewable executive decision package. Accepted analysis, actual implementation results, and realized financial outcomes are measured separately.
+The business outcome is accepted work plus an accountable decision and its resulting action. Track decision turnaround and correction effort alongside workflow cost; message, session, and token counts alone do not establish success.

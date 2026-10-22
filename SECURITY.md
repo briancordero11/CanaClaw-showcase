@@ -4,13 +4,11 @@ This repository contains public product-design documentation and fictional examp
 
 ## Identity and access
 
-- Distinguish Can.AI seat ownership, installation-package access, Codex or Claude agent-anchor credentials, platform authentication, and decision authority.
-- Treat the agent anchor as the customer's starting environment with minimum required connectors/plugins installed; treat the harness as the session executor that manages execution, effective permissions, and context.
-- Keep role agents inside the selected harness within their assigned responsibilities; role names do not create identities, grant tool access, or replace human decision authority.
+- Distinguish Can.AI seat ownership, installation-package access, Codex/Claude plugin credentials, platform authentication, and decision authority.
 - Preserve each user's provider and session boundaries on a shared office host.
 - Store credentials in an approved credential store; exclude them from exported profiles, messages, and logs.
 - Give the Chief AI Officer or Senior-Level Engineer controlled access to starter intake, customization, and PowerTools setup without distributing their provider identity to other users.
-- During Agent selection, validate candidate Cognition, Emergences Labs, and Rowboat Labs connections individually, including their data access and execution location.
+- Validate Cognition, Emergences Labs, and Rowboat Labs connections individually, including their data access and execution location.
 
 ## Computer actions and decisions
 
@@ -20,18 +18,6 @@ This repository contains public product-design documentation and fictional examp
 - Authenticate and correlate iMessage decisions with the original request; message content alone does not expand tool access.
 - Record action completion so retries and reconnects do not blindly repeat external changes.
 - Provide visible pause, stop, failure, and host-unavailable states.
-
-## Organization and budget decisions
-
-Automation may gather evidence, model budget allocations, draft organization proposals, and record approvals. Executive organization changes and budget commitments require the designated CEO/CFO authority and applicable HR authorization. An agent, harness, or iMessage reply cannot independently authorize personnel changes, contractual commitments, or spending outside the sender's delegated authority.
-
-Keep the Northstar planning example's redeployed roles separate from cash savings. Preserve the approved assumptions, scope, accountable human owners, and decision record before any downstream system change.
-
-## Tool requirements and certifications
-
-Starter intake and customization include a customer-defined register for required tools and assurance evidence. For each requirement, record the supplier and service, deployment and data scope, required certificate or audit-report type, source document, coverage period or expiry, reviewer, and acceptance status. Link actual evidence and mark missing, expired, or out-of-scope material explicitly.
-
-The register records requirements and review results; it does not assert that Can.AI has obtained certification or that a supplier's certification covers every connected tool, host, or deployment. Agent selection and PowerTools changes trigger a review of affected requirements.
 
 ## On-premises and outbound data
 
